@@ -1,0 +1,22 @@
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 60px);
+  background-image: linear-gradient(to bottom, #b53df5, #5814a2);
+
+  .myAtropos {
+    height: 383px;
+    width: 631px;
+    position: relative;
+
+    .start {
+      color: #fff;
+      position: absolute;
+      bottom: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 30px;
+    }
+  }
+}
