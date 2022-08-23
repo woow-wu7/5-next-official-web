@@ -33,7 +33,7 @@ getServerSideProps
 getServerSideProps
 - 1. 服务端运行: getServerSideProps 这个函数只会在 ( 服务器端运行，不会在浏览器端运行 )
 - 2. 运行次数: 每请求一次，就回在服务器上运行一次 getServerSideProps
-- 3. 当通过 ( next/link 和 next/router ) 获取页面时，getServerSideProps会在后端去请求服务器，然后向前端返回json数据
+- 3. 当通过 ( next/link 和 next/router ) 获取页面时，getServerSideProps会在服务端去请求api服务器数据，然后向前端返回json数据
 ```
 
 ## (二) 目录结构
@@ -68,6 +68,14 @@ npm install --save-dev sass
 npm i atropos -S
 ```
 
+## (四) 部署
+
+```
+1
+pm2
+- 作用: 是一个带有负载均衡功能的应用进程管理器，可以使 ( node ) 服务在 ( 后台运行, 即持久化部署 )
+```
+
 ## 资料
 
 - 官网
@@ -79,3 +87,6 @@ npm i atropos -S
     - https://juejin.cn/post/7126369893930237989
 - nextjs
   - 渲染方案对比 https://juejin.cn/post/7093181697054736392
+- pm2
+  - https://juejin.cn/post/6933479486616797191
+  - https://string.quest/read/13106542
