@@ -74,6 +74,9 @@ npm i atropos -S
 1
 pm2
 - 作用: 是一个带有负载均衡功能的应用进程管理器，可以使 ( node ) 服务在 ( 后台运行, 即持久化部署 )
+- 命令:
+  - npm run build
+  - pm2 start npm --watch --name "next-web" -- run start
 ```
 
 ## 资料
