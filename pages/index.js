@@ -5,7 +5,6 @@ import { Button } from "antd";
 import Link from "next/link";
 
 export default function Home() {
-  const goWebHome = () => {};
   return (
     <div className={styles.container}>
       <Head>
@@ -24,10 +23,17 @@ export default function Home() {
           <code className={styles.code}>pages/index.js</code>
         </p>
 
-        <div>
-          <span>导航：</span>
+        <div className={styles.nav}>
+          <div>导航</div>
           <Link href="/web-home">
-            <Button type="primary">webHome</Button>
+            <Button type="primary" className={styles.button}>
+              webHome
+            </Button>
+          </Link>
+          <Link href="/getServerSideProps-test">
+            <Button type="primary" className={styles.button}>
+              getServerSideProps
+            </Button>
           </Link>
         </div>
 
