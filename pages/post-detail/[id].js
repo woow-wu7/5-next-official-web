@@ -1,4 +1,4 @@
-import { request } from "../../utils/index";
+import { request } from "@/utils/index";
 import Detail from "@/components/PostDetail";
 
 export async function getStaticPaths() {

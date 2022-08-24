@@ -12,7 +12,7 @@ interactive 交互 // The interactive course 交互式课程
 conversation 对话 // have conversation 进行对话
 hydration 水化作用 // 注水 和 脱水
 
-imperative 命令式的
+imperative 命令式的 // imperatively 命令式地
 ```
 
 ## (一) 基础知识
