@@ -1,6 +1,5 @@
 import styles from "./index.module.scss";
 import { useRouter } from "next/router";
-import { Button } from "antd";
 
 const Detail = (props) => {
   const { data = {} } = props || { data: {} };

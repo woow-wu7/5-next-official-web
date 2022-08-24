@@ -1,5 +1,5 @@
 import { request } from "../../utils/index";
-import Detail from "../../components/PostDetail";
+import Detail from "@/components/PostDetail";
 
 export async function getStaticPaths() {
   const data = await request("http://localhost:3000/api/postList");

@@ -11,6 +11,8 @@ populate 填充 迁移
 interactive 交互 // The interactive course 交互式课程
 conversation 对话 // have conversation 进行对话
 hydration 水化作用 // 注水 和 脱水
+
+imperative 命令式的
 ```
 
 ## (一) 基础知识
@@ -103,6 +105,11 @@ npm install --save-dev sass
 2
 动画
 npm i atropos -S
+
+3
+配置别名
+- 1. next.config.js 中自定义 webpack 配置
+- 2. jsconfig.json 中配置 compilerOptions/ baseUrl 和 paths
 ```
 
 ## (四) 部署
