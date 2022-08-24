@@ -12,7 +12,8 @@ interactive 交互 // The interactive course 交互式课程
 conversation 对话 // have conversation 进行对话
 hydration 水化作用 // 注水 和 脱水
 
-imperative 命令式的 // imperatively 命令式地
+imperative 命令式的 // imper ( imperatively命令式地 )
+declarative 声明式的 // declare
 ```
 
 ## (一) 基础知识
@@ -73,6 +74,21 @@ getServerSideProps --------------- SSR
 getStaticPaths getStaticProps ---- SSG
 - getStaticPaths: 枚举动态路由对应的所有页面
 - getStaticProps: 包含 ( 无数据模式 ) 和 ( 有数据模式 - 在build时进行api请求，然后在组装数据生成html )
+```
+
+```
+4
+命令式 和 声明式 和 函数式 的区别？
+---
+命令式 - Imperative
+- 主要思想: 命令式编程的主要思想是关注计算机执行的步骤，即一步一步告诉计算机先做什么再做什么
+声明式 - Declarative
+- 声明式编程是以数据结构的形式来表达程序执行的逻辑
+- 主要思想: 它的主要思想是告诉计算机应该做什么，但不指定具体要怎么做
+函数式 - Functional
+- 函数式 和 声明式类似
+- 主要思想: 它的主要思想是告诉计算机应该做什么，但不指定具体要怎么做
+- 主要区别: 函数式和命令式的区别: 函数式编程不仅仅局限于声明式编程
 ```
 
 ## (二) 目录结构
