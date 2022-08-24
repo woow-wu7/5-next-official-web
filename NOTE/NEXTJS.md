@@ -57,14 +57,20 @@ SSG
 
 ```
 3
-getServerSideProps
+getServerSideProps getStaticPaths getStaticProps
 - 这几个方法都只能在 pages 中使用，不能在 components 中使用
 ---
 
-getServerSideProps
+
+getServerSideProps --------------- SSR
 - 1. 服务端运行: getServerSideProps 这个函数只会在 ( 服务器端运行，不会在浏览器端运行 )
 - 2. 运行次数: 每请求一次，就回在服务器上运行一次 getServerSideProps
 - 3. 当通过 ( next/link 和 next/router ) 获取页面时，getServerSideProps 会在服务端去请求api服务器数据，然后向前端返回json数据
+
+
+getStaticPaths getStaticProps ---- SSG
+- getStaticPaths: 枚举动态路由对应的所有页面
+- getStaticProps: 包含 ( 无数据模式 ) 和 ( 有数据模式 - 在build时进行api请求，然后在组装数据生成html )
 ```
 
 ## (二) 目录结构
