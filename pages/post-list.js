@@ -5,6 +5,15 @@ import { request } from "../utils/request";
 
 const GetServerSideProps = (props) => {
   const { data } = props || { data: [] };
+  console.log(
+    "浏览器环境访问: node环境中的环境变量，因为process.env只有node环境中存在 => process.env.HOST => ",
+    process.env.HOST
+  );
+
+  console.log(
+    "浏览器环境访问: process.env.NEXT_PUBLIC_FOR_ALL => ",
+    process.env.NEXT_PUBLIC_FOR_ALL
+  );
 
   return (
     <div className={styles.container}>
@@ -22,6 +31,16 @@ const GetServerSideProps = (props) => {
 // SSG 静态生成
 export const getStaticProps = async (context) => {
   console.log("context", context);
+
+  console.log(
+    "node环境访问: node环境中的环境变量，因为process.env只有node环境中存在 => process.env.HOST => ",
+    process.env.HOST
+  );
+
+  console.log(
+    "node环境访问: process.env.NEXT_PUBLIC_FOR_ALL",
+    process.env.NEXT_PUBLIC_FOR_ALL
+  );
 
   const data = await request("http://localhost:3000/api/postList");
   return { props: { data } };
