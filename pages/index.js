@@ -35,6 +35,11 @@ export default function Home() {
               getServerSideProps
             </Button>
           </Link>
+          <Link href="/post-list">
+            <Button type="primary" className={styles.button}>
+              获取文章列表
+            </Button>
+          </Link>
         </div>
 
         <div className={styles.grid}>

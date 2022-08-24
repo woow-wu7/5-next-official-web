@@ -34,9 +34,12 @@ SSR
 
 SSG
 - 优点:
-  - 减轻服务器压力，可以把生成的静态资源（html）放到 ( CDN ) 上，合理利用缓存; SEO
-  - 可以利用 ( getStaticPath ) 给 ( 动态路由 ) 获取参数，然后传递给 ( getStaticProps )，然后请求数据给 ( page )，比如 ( 从列表进入详情 )
+  - 减轻服务器压力，可以把生成的静态资源（ html ）放到 ( CDN ) 上，合理利用缓存; SEO
+  - 有数据模式SSG: 可以利用 ( getStaticPath ) 给 ( 动态路由 ) 获取参数，然后传递给 ( getStaticProps )，然后请求数据给 ( page )，比如 ( 从列表进入详情 )
 - 缺点: 静态化，即静态资源，所有人访问的都是同一个页面，不能针对不同权限返回不同的动态页面
+- 分类
+  - 无数据模式SSG，即不需要请求数据
+  - 有数据模式SSG，即在 ( build ) 时发送api请求，获取数据，然后将数据组装成 ( HTML )，完成打包
 ```
 
 ```
@@ -45,6 +48,9 @@ SSG
 - 概念:
   - 1. ( 预渲染 ) 指 ( 预先生成 ) 包含页面结构的 ( html ) 文件，这样在下载到 html 文件后，用户即可快速查看页面（ 此时也可执行如点击 <a> 标签之类的纯 html 操作 )
   - 2. ( Hydration ) 指 ( 在 1 基础上随后 js 的下载完成并执行，则让页面有了更多交互 )
+- 包含:
+  - SSG
+  - SSR
 - 总结
   - 也就是在js执行前，就能看到具体有内容的页面，之后执行js进行交互操作即可
 ```
@@ -106,9 +112,14 @@ pm2
 
 ## 资料
 
-- 官网
-  - https://atroposjs.com/
-  - https://www.chukonggame.com/
+- nextjs
+  - 官网
+    - https://atroposjs.com/
+    - https://www.chukonggame.com/
+  - 重学 nextjs
+    - https://juejin.cn/post/7000351648459522078
+  - 预渲染
+    - https://juejin.cn/post/7062555709853925389
 - 动画
   - 3D 卡片
     - https://atroposjs.com/docs/react

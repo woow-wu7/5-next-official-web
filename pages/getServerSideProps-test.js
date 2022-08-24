@@ -44,7 +44,7 @@ const GetServerSideProps = (props) => {
   );
 };
 
-// 服务端渲染
+// SSR
 export const getServerSideProps = async ({ req, res }) => {
   const data = await fetchEnglish("I come from China");
   console.log("req", req);
