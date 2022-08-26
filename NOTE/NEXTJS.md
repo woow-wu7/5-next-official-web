@@ -128,6 +128,13 @@ npm i atropos -S
 - 2. jsconfig.json 中配置 compilerOptions/ baseUrl 和 paths
 
 4
+redux 相关
+npm install redux -S
+npm install next-redux-wrapper react-redux -S
+npm install @reduxjs/toolkit -S
+
+
+5
 授权登录
 npm install --save next-auth
 ```
@@ -153,6 +160,8 @@ pm2
     - https://juejin.cn/post/7000351648459522078
   - 预渲染
     - https://juejin.cn/post/7062555709853925389
+  - 状态管理
+    - https://segmentfault.com/a/1190000040610201
   - 授权登录
     - https://mdnice.com/writing/02f862b98cfa49c6bc53c65dba08b4fa
     - https://www.cnblogs.com/ttppl/articles/15730854.html

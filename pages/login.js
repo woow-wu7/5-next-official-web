@@ -1,8 +1,8 @@
 import Head from "next/head";
 import { Form, Input, Button } from "antd";
 import styles from "../styles/login.module.scss";
-import { signIn, signOut } from "next-auth/react";
 import axios from "axios";
+// import { signIn, signOut } from "next-auth/react";
 
 export default function SignIn({ csrfToken }) {
   const onFinish = async (values) => {

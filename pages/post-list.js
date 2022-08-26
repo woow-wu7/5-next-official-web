@@ -2,10 +2,20 @@ import Head from "next/head";
 import styles from "../styles/GetServerSideProps.module.scss";
 import List from "../components/PostList";
 import { request } from "../utils/request";
+import { useSelector, useDispatch } from "react-redux";
+import { counterActions } from "../store/counter";
 // import { useSession, signIn, signOut } from "next-auth/react";
 
 const GetServerSideProps = (props) => {
   const { data } = props || { data: [] };
+
+  const { count } = useSelector((state) => state.counter);
+  console.log("count", count);
+  const dispatch = useDispatch();
+
+  const getCount = () => {
+    dispatch(counterActions.add(1));
+  };
 
   console.log(
     "浏览器环境访问: node环境中的环境变量，因为process.env只有node环境中存在 => process.env.HOST => ",
@@ -25,6 +35,10 @@ const GetServerSideProps = (props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <div style={{ padding: "20px" }}>
+        <button onClick={getCount}>修改count</button>
+        <span>count：{count}</span>
+      </div>
       <List data={data} />
     </div>
   );
