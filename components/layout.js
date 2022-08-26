@@ -1,12 +1,13 @@
 import Navbar from "./NavBar";
 import Footer from "./Footer";
+import styles from "./layout.module.scss";
 
 export default function Layout({ children }) {
   return (
-    <div style={{ height: "100%" }}>
-      <Navbar />
-      <main style={{ height: "100%" }}>{children}</main>
-      <Footer />
+    <div className={styles.container}>
+      <Navbar className={styles.header} />
+      <main className={styles.main}>{children}</main>
+      <Footer className={styles.footer} />
     </div>
   );
 }

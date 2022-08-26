@@ -126,6 +126,10 @@ npm i atropos -S
 配置别名
 - 1. next.config.js 中自定义 webpack 配置
 - 2. jsconfig.json 中配置 compilerOptions/ baseUrl 和 paths
+
+4
+授权登录
+npm install --save next-auth
 ```
 
 ## (四) 部署
@@ -149,6 +153,13 @@ pm2
     - https://juejin.cn/post/7000351648459522078
   - 预渲染
     - https://juejin.cn/post/7062555709853925389
+  - 授权登录
+    - https://mdnice.com/writing/02f862b98cfa49c6bc53c65dba08b4fa
+    - https://www.cnblogs.com/ttppl/articles/15730854.html
+    - http://www.bandiandog.com/wangluobiancheng/124.html
+    - https://www.25230.com/17200404/8500.html
+    - https://zh.quish.tv/how-use-nextauth-js-your-project-nextjs
+    - https://github.com/nextauthjs/next-auth/blob/main/docs/docs/configuration/pages.md
 - 动画
   - 3D 卡片
     - https://atroposjs.com/docs/react

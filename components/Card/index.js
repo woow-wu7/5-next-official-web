@@ -6,7 +6,7 @@ import atroposForestBack from "../../public/card/atropos-forest-back.svg";
 import atroposForestMid from "../../public/card/atropos-forest-mid.svg";
 import atroposForestFront from "../../public/card/atropos-forest-front.svg";
 import Image from "next/image";
-import styles from "../../styles/components/Card.module.scss";
+import styles from "./index.module.scss";
 import "atropos/css";
 
 export default function Card() {

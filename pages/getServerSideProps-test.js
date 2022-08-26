@@ -1,8 +1,10 @@
 import Head from "next/head";
-import { Input } from "antd";
 import { useState } from "react";
 import styles from "../styles/GetServerSideProps.module.scss";
 import Translate from "../components/Translate";
+import { Button } from "antd";
+import { useRouter } from "next/router";
+import { Link } from "next/link";
 
 const fetchEnglish = async (params) => {
   const response = await fetch(
@@ -17,6 +19,7 @@ const GetServerSideProps = (props) => {
 
   const [input, setINput] = useState("I come from China");
   const [data, setData] = useState(props.data);
+  const router = useRouter();
 
   // spa
   const onChangeInput = async (e) => {
@@ -40,6 +43,10 @@ const GetServerSideProps = (props) => {
         data={data}
         onChangeInput={onChangeInput}
       ></Translate>
+
+      <div type="link" onClick={() => router.back()}>
+        <a href="#">返回</a>
+      </div>
     </div>
   );
 };

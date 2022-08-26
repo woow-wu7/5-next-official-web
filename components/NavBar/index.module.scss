@@ -4,8 +4,21 @@
   color: #fff;
 
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+
+  aside {
+    display: flex;
+  }
+  main {
+    display: flex;
+    font-size: 10px;
+    & > div {
+      margin-left: 14px;
+      cursor: pointer;
+    }
+  }
 
   .logo {
     font-size: 30px;

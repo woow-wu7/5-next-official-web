@@ -2,9 +2,11 @@ import Head from "next/head";
 import styles from "../styles/GetServerSideProps.module.scss";
 import List from "../components/PostList";
 import { request } from "../utils/request";
+// import { useSession, signIn, signOut } from "next-auth/react";
 
 const GetServerSideProps = (props) => {
   const { data } = props || { data: [] };
+
   console.log(
     "浏览器环境访问: node环境中的环境变量，因为process.env只有node环境中存在 => process.env.HOST => ",
     process.env.HOST
